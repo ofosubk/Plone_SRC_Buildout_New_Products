@@ -1,0 +1,20 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="plone.CORT_Event_Interest_Area">
+
+  <!-- configure your content components here -->
+  
+  <!-- -*- extra stuff goes here -*- -->
+  <class class=".cort_event_interest_area.CORT_Event_Interest_Area">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.ICORT_Event_Interest_Area"
+        />
+    <require
+        permission="cmf.ModifyPortalContent"
+        set_schema="..interfaces.ICORT_Event_Interest_Area"
+        />
+  </class>
+
+</configure>
